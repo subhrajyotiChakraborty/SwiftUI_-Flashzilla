@@ -8,36 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+//    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    let timer = Timer.publish(every: 1, tolerance: 0.5, on: .main, in: .common).autoconnect()
+    
+    @State private var counter = 0
+    
     var body: some View {
-        VStack {
-            ZStack {
-                Rectangle()
-                    .fill(Color.blue)
-                    .frame(width: 300, height: 300)
-                    .onTapGesture {
-                        print("Rectangle tapped!")
-                    }
+        Text("Hello world")
+            .onReceive(timer, perform: { time in
+                if self.counter == 5 {
+                    self.timer.upstream.connect().cancel()
+                } else {
+                    print("The time is now \(time)")
+                }
                 
-                Circle()
-                    .fill(Color.red)
-                    .frame(width: 300, height: 300)
-                    //                .contentShape(Rectangle())
-                    .onTapGesture {
-                        print("Circle tapped!")
-                    }
-                    .allowsHitTesting(false)
-            }
-            
-            VStack {
-                Text("Hello")
-                Spacer().frame(height: 100)
-                Text("World")
-            }
-            .contentShape(Rectangle())
-            .onTapGesture {
-                print("VStack tapped!")
-            }
-        }
+                self.counter += 1
+            })
     }
 }
 
