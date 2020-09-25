@@ -13,6 +13,7 @@
 		224BB73A2517CFF100B8B6AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224BB7392517CFF100B8B6AF /* Preview Assets.xcassets */; };
 		22C9A1B9251A83F60013B2B0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9A1B8251A83F60013B2B0 /* Card.swift */; };
 		22C9A1BC251A87870013B2B0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9A1BB251A87870013B2B0 /* CardView.swift */; };
+		22EBACAA251E244200F58241 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBACA9251E244200F58241 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		224BB73B2517CFF100B8B6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C9A1B8251A83F60013B2B0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		22C9A1BB251A87870013B2B0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		22EBACA9251E244200F58241 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				224BB7322517CFF000B8B6AF /* FlashzillaApp.swift */,
+				22EBACA9251E244200F58241 /* EditView.swift */,
 				22C9A1BB251A87870013B2B0 /* CardView.swift */,
 				224BB7342517CFF000B8B6AF /* ContentView.swift */,
 				22C9A1B8251A83F60013B2B0 /* Card.swift */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224BB7352517CFF000B8B6AF /* ContentView.swift in Sources */,
+				22EBACAA251E244200F58241 /* EditView.swift in Sources */,
 				22C9A1B9251A83F60013B2B0 /* Card.swift in Sources */,
 				22C9A1BC251A87870013B2B0 /* CardView.swift in Sources */,
 				224BB7332517CFF000B8B6AF /* FlashzillaApp.swift in Sources */,
